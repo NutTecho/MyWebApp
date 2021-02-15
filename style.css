@@ -5,3 +5,10 @@
     border: 1px black;
     margin: 2px;
 }
+.set2
+{
+    background-color: darkslategrey;
+    font-size: 15px;
+    font-family: cursive;
+    padding: 1%;
+}
