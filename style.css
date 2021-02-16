@@ -12,3 +12,19 @@
     font-family: cursive;
     padding: 1%;
 }
+.set3
+{
+    font-family: sans-serif;
+    background-color: rgb(168, 168, 168);
+    padding: 10px;
+    border: 25px solid black;
+    margin: 5px;
+    width: 200px;
+    /* float: left; */
+    position: absolute;
+    border-radius: 0 150px 150px 0;
+    top: 50%;
+    left : 50%;
+    transform: translate(-50%,-50%);
+
+}
