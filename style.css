@@ -28,3 +28,25 @@
     transform: translate(-50%,-50%);
 
 }
+.demo1
+{
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: lightblue;
+}
+.demo1:hover
+{
+    color: darkblue;
+
+}
+li{
+    display: none;
+}
+
+.list{
+    background-color: lightblue;
+    height: 1em;
+}
+.list:hover li{
+    display: list-item;
+}
