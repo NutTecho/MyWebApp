@@ -31,7 +31,7 @@
 .demo1
 {
     font-size: large;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     background-color: lightblue;
 }
 .demo1:hover
@@ -46,7 +46,12 @@ li{
 .list{
     background-color: lightblue;
     height: 1em;
+    
 }
 .list:hover li{
     display: list-item;
+}
+body
+{
+    font-family: 'Ubuntu', sans-serif;
 }
