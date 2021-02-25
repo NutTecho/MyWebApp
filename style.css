@@ -55,3 +55,17 @@ body
 {
     font-family: 'Ubuntu', sans-serif;
 }
+.bg-image
+{
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/410/867/750/vector-forest-sunset-forest-sunset-forest-wallpaper-preview.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:  250px 250px;
+    opacity: 70%;
+}
+.fg-image
+{
+    font-size:xx-large;
+    font-family: 'Ubuntu', sans-serif;
+}
