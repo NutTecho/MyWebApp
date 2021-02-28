@@ -1,5 +1,38 @@
-let fruits = ["apple","banana","grave","coconut","mango","orange"];
-let score = [10,20,30,40,50,60,70,80,90];
+// let box1 = document.getElementsByClassName('box1');
+// for(let i = 0; i < box1.length ; i++)
+// {
+//     box1[i].innerHTML = "this is halloween";
+// }
+
+
+// let box1 = document.querySelectorAll('.box1')
+// box1.forEach((x) => {
+//     x.innerHTML = "this is varentile";
+//  });
+
+let body = document.body;
+let box1 = document.querySelector('.box1');
+let but1 = document.querySelector('.but1');
+
+but1.addEventListener('click',() => {
+    if(box1.style.display === 'none')
+    {
+        box1.style.display = 'block';
+    }
+    else
+    {
+      box1.style.display = 'none';  
+    }
+    body.classList.toggle('dark-theme');
+})
+
+
+
+
+
+
+// let fruits = ["apple","banana","grave","coconut","mango","orange"];
+// let score = [10,20,30,40,50,60,70,80,90];
 // console.log(fruits)
 // for(let i = 0;i < score.length; i++)
 // {
@@ -71,19 +104,19 @@ let score = [10,20,30,40,50,60,70,80,90];
 // })
 //player.talk();
 
-function Player(name,power,rank,money)
-{
-    this.name = name;
-    this.power = power;
-    this.rank = rank;
-    this.money = money;
-    this.talk = function()
-    {
-        console.log( this.name + ' is iron man!');
-    }
-}
+// function Player(name,power,rank,money)
+// {
+//     this.name = name;
+//     this.power = power;
+//     this.rank = rank;
+//     this.money = money;
+//     this.talk = function()
+//     {
+//         console.log( this.name + ' is iron man!');
+//     }
+// }
 
-let player1 = new Player("tony","beam",5,100);
-let player2 = new Player("vision","gem",4,20);
-console.log(player1);
-player1.talk();
+// let player1 = new Player("tony","beam",5,100);
+// let player2 = new Player("vision","gem",4,20);
+// console.log(player1);
+// player1.talk();
