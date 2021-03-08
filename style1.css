@@ -35,3 +35,22 @@ body
 {
     padding: 10px;
 }
+.scroll-info
+{
+    background-color: gold;
+    font-size: 20px;
+    position: fixed;
+
+}
+.contact
+{
+    border: flat;
+    border-radius: 50px;
+    background-color: lightsalmon;
+    font-size: 50px;
+    color: #202020;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+
+}

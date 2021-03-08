@@ -120,3 +120,34 @@ but1.addEventListener('click',() => {
 // let player2 = new Player("vision","gem",4,20);
 // console.log(player1);
 // player1.talk();
+
+// get key press
+function keyup(event)
+{
+  if(event.key === 'ArrowLeft')
+  {
+    console.log('left'); 
+  }
+  else if (event.key === 'ArrowRight')
+  {
+   console.log('right'); 
+  }
+  
+}
+document.addEventListener('keyup',keyup);
+
+// get scroll x , scroll y
+let scrollInfo = document.querySelector('.scroll-info')
+window.addEventListener('scroll',() => {
+  let infotext = 'X = ' + window.scrollX;
+  infotext += ',Y = ' + window.scrollY;
+  scrollInfo.innerHTML = infotext;
+})
+
+
+let form1 = document.querySelector('.formbox')
+// console.log(form1.value)
+// console.log(form1.getAttribute('hidden-message'))
+// form1.setAttribute('hidden-message','apple')
+// console.log(form1.dataset.hiddenMessage)
+form1.dataset.hiddenMessage = 'apple'
