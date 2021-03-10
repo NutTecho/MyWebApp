@@ -44,40 +44,91 @@
         Happy birth day to you
     </div>
     <br>
-    <form>
-        <label>what is your favourit color </label>
-        <br>
-        <input class="formbox" value="banana" data-hidden-message = "papaya">
-        <br>
-        <label>awnser</label>
-        <br>
-        <input class="formbox" value="banana" />
-        <br>
-        <button class="sendbut">Send</button>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus rem dicta, dolore eius sed quam quod vitae
-            iste soluta ducimus perspiciatis temporibus unde, aliquid, pariatur consectetur maxime labore velit
-            inventore cupiditate. Distinctio, sunt illo vel amet esse officiis magnam voluptatem et ducimus veritatis
-            accusantium quia! Dolores ab rem repellat sit eius autem quo. At a facere tempore, ex pariatur odit suscipit
-            sint. Voluptatem pariatur, quis itaque cumque minus error assumenda alias eaque distinctio? Ut neque beatae
-            explicabo. Illo iusto quidem quia tempore consectetur aspernatur nihil dignissimos possimus explicabo
-            accusantium natus cupiditate numquam quaerat excepturi, repudiandae unde deleniti cumque beatae
-            voluptatibus.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus rem dicta, dolore eius sed quam quod vitae
-                iste soluta ducimus perspiciatis temporibus unde, aliquid, pariatur consectetur maxime labore velit
-                inventore cupiditate. Distinctio, sunt illo vel amet esse officiis magnam voluptatem et ducimus veritatis
-                accusantium quia! Dolores ab rem repellat sit eius autem quo. At a facere tempore, ex pariatur odit suscipit
-                sint. Voluptatem pariatur, quis itaque cumque minus error assumenda alias eaque distinctio? Ut neque beatae
-                explicabo. Illo iusto quidem quia tempore consectetur aspernatur nihil dignissimos possimus explicabo
-                accusantium natus cupiditate numquam quaerat excepturi, repudiandae unde deleniti cumque beatae
-                voluptatibus.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus rem dicta, dolore eius sed quam quod vitae
-                    iste soluta ducimus perspiciatis temporibus unde, aliquid, pariatur consectetur maxime labore velit
-                    inventore cupiditate. Distinctio, sunt illo vel amet esse officiis magnam voluptatem et ducimus veritatis
-                    accusantium quia! Dolores ab rem repellat sit eius autem quo. At a facere tempore, ex pariatur odit suscipit
-                    sint. Voluptatem pariatur, quis itaque cumque minus error assumenda alias eaque distinctio? Ut neque beatae
-                    explicabo. Illo iusto quidem quia tempore consectetur aspernatur nihil dignissimos possimus explicabo
-                    accusantium natus cupiditate numquam quaerat excepturi, repudiandae unde deleniti cumque beatae
-                    voluptatibus.</p>
+    <form action="https://httpbin.org/post" method="POST">
+        <p>
+           <label for="input-name">Input name : </label> 
+        </p>
+        
+        <p>
+            <input class="formbox" id="input-name"
+            name="fullname" type="text" data-hidden-message = "papaya">
+        </p>
+        <p>
+           <label for="input-phone">input phone : </label> 
+        </p>
+        
+        <p>
+            <input class="formbox" id="input-phone" 
+            name="phone" type="tel"/>
+        </p>
+        <p>
+            <label for="input-email">input email : </label> 
+         </p>
+         
+         <p>
+             <input class="formbox" id="input-email" 
+             name="email" type="email">
+         </p>
+         <p>
+            <label>input color : </label> 
+         </p>
+         
+         <p>
+             <input class="formbox" id="input-color-red" 
+             name="color" type="radio" value="red" checked> 
+            <label for="input-color-red">Red</label>
+
+             <input class="formbox" id="input-color-green" 
+             name="color" type="radio" value="green"> 
+             <label for="input-color-green">Green</label>
+
+             <input class="formbox" id="input-color-blue" 
+             name="color" type="radio" value="blue">
+             <label for="input-color-blue">Blue</label>
+
+             <input class="formbox" id="input-color-yellow" 
+             name="color" type="radio" value="yellow">
+             <label for="input-color-yellow">Yellow</label>
+               
+         </p>
+         <p>
+             <label> select gender : </label> 
+        </p>
+        <p>
+            <input id="input-gender-male" type="checkbox" 
+            name="gender" value="male" checked>
+            <label for="input-gender-male">Male</label>
+
+            <input id="input-gender-female" type="checkbox" 
+            name="gender" value="female">
+            <label for="input-gender-female">Female</label>
+        </p>
+
+        <p>
+            <label>select car : </label>
+        </p>
+        <p>
+            <select name="car">
+                <option value="sport">Sport</option>
+                <option value="city" selected>city</option>
+                <option value="van">van</option>
+                <option value="EV">EVcar</option>
+                <option value="punk">Punk</option>
+            </select>
+        </p>
+         <p>
+            <label for="input-address">input address : </label> 
+         </p>
+         
+         <p>
+             <textarea rows="5" class="formbox" id="input-address" 
+             name="address"></textarea>
+         </p>
+        <p>
+             <button class="sendbut" type="submit" >Send</button>
+        </p>
+       
+       
         <label class="contact">...</label>
         <footer class="footer-bar">
             <p>hello test demo</p>
