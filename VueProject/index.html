@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>Vue.js Project</title>
+</head>
+<body>
+    <div id="vue-app">
+    <h1> {{message}} </h1>
+    <p>your name : {{setName('Kim')}}</p>
+    <p>your job : {{job}}</p>
+    <p>your age : {{age}}</p>
+    <p>your money : {{money}}</p>
+    <p>website : <a v-bind:href="web">clicker here ...</a></p>
+    <p>
+    <button v-on:click="adddata()">Add</button>
+    </p>    
+    <p>
+      <button v-on:click="subdata()">Sub</button>  
+    </p>
+    <p>
+        count : {{count}}
+        <input v-on:keyup.enter="counting()">
+    </p>
+    
+    </div>
+    <script src="app.js" charset="utf-8"></script>
+</body>
+</html>
