@@ -151,3 +151,38 @@ let form1 = document.querySelector('.formbox')
 // form1.setAttribute('hidden-message','apple')
 // console.log(form1.dataset.hiddenMessage)
 form1.dataset.hiddenMessage = 'apple'
+
+
+
+// test promise 
+function inputPromise(process,delay){
+  return new Promise((resolve,reject) =>{
+    setTimeout(() => {
+      const numberInut = Number(promp(process));
+      if(isNaN(numberInut)){
+        reject(new Error('Wrong type'));
+        return;
+      }
+      resolve(numberInut);
+    },delay);
+  });
+}
+
+
+inputPromise('weight',1000)
+.then((result) =>{
+  alert(result);
+  return inputPromise('hight',1000);
+})
+.then((result) => {
+  alert(result);
+  return inputPromise('money',1000);
+})
+.then((result) => {
+  alert(result);
+  return inputPromise('people',1000);
+})
+.catch((error)=>{
+  alert(error.message);
+})
+
