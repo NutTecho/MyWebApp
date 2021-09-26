@@ -51,3 +51,57 @@ but2.addEventListener('click',clearall);
 // {
 //     console.log(i);
 // }
+
+// ===========unpack data =========================
+// const fruit = ['apple','banana','orange']
+// const hero = [{'name':'tom','age': 10},
+//               { 'name': 'jack','age': 12},
+//               {'name':'bill','age': 15}]
+// const fx = [...fruit]
+// fx[0] = 'coconut'
+// const hero2 = {'name' : 'kim','age' : 14}
+// const fy = [...hero,hero2]
+// const {name : xname, age : xage} = hero2
+
+// const editid = 1
+// const editname = 'will'
+// const hero3 = hero.map((getname,index) =>{
+//     if(index !== editid){
+//         return getname;
+//     }
+//     const edithero = {...getname};
+//     edithero.name = editname;
+//     return edithero;
+// }
+// )
+
+// const hero4 = hero.filter((getname,index) =>{
+//     return index !== 1
+// })
+
+// console.log(hero4)
+// console.log(hero)
+// console.log(fy)
+// console.log(hero3)
+
+
+// =============sort from max to min===============
+// const numtest = [1,5,3,4,2,6]
+// const numt1 = [...numtest].sort((num1,num2) =>{
+//     if(num1 > num2){
+//         return -1;
+//     }
+//     else if (num1 < num2) {
+//         return 0
+//     }
+// })
+// console.log(numtest)
+// console.log(numt1)
+
+
+const word = 'Black Earing'
+const findword = 'ear'
+const isfind = word.toLowerCase().includes(findword)
+console.log(isfind)
+console.log(word.slice(0,2))
+console.log(`data : ${findword}`)
