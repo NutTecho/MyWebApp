@@ -1,0 +1,16 @@
+{
+  "name": "firebase_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "storage.js",
+  "scripts": {
+    "start" : "node storage.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "firebase": "^9.8.1"
+  }
+}
